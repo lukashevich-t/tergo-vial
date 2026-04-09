@@ -19,6 +19,7 @@
  */
 
 // disable debug print:
+#undef NO_DEBUG
 #define NO_DEBUG
 // force enable debug output:
 // #undef NO_DEBUG
@@ -54,7 +55,7 @@
 // Для того, чтобы скомпилировалась поддержка обычной подсветки с использованием аппаратного PWM:
 #define BACKLIGHT_PWM_DRIVER PWMD7
 // pwm channel зависит от того, какой вывод используется для PWM
-#define BACKLIGHT_PWM_CHANNEL RP2040_PWM_CHANNEL_
+#define BACKLIGHT_PWM_CHANNEL RP2040_PWM_CHANNEL_B
 // это мне посоветовал gemimi, но вроде бы нигде в кодовой базе нет такой константы:
 #define SPLIT_BACKLIGHT_ENABLE
 
