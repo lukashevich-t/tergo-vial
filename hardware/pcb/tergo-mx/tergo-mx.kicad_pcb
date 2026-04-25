@@ -41,15 +41,15 @@
 			(usegerberattributes no)
 			(usegerberadvancedattributes no)
 			(creategerberjobfile no)
-			(dashed_line_dash_ratio 12.000000)
-			(dashed_line_gap_ratio 3.000000)
+			(dashed_line_dash_ratio 12)
+			(dashed_line_gap_ratio 3)
 			(svgprecision 4)
 			(plotframeref no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
 			(hpglpenspeed 20)
-			(hpglpendiameter 15.000000)
+			(hpglpendiameter 15)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
 			(pdf_metadata yes)
@@ -232,7 +232,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dacbec8")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -394,7 +394,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005daccfb7")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -556,7 +556,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dacdb06")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -718,7 +718,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dace326")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -880,7 +880,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dacf0c2")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -1042,7 +1042,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dacf9c3")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -1204,7 +1204,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad32aa")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -1366,7 +1366,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad32b0")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -1528,7 +1528,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad32b6")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -1690,7 +1690,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad32bc")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -1852,7 +1852,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad32c2")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2014,7 +2014,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad32c8")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2176,7 +2176,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad50df")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2338,7 +2338,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad50e5")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2500,7 +2500,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad50eb")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2662,7 +2662,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad50f1")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2824,7 +2824,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad50f7")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -2986,7 +2986,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad50fd")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -3148,7 +3148,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad62ce")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -3310,7 +3310,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad62d4")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -3472,7 +3472,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad62da")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -3634,7 +3634,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad62e0")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -3796,7 +3796,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad62e6")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -3958,7 +3958,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad62ec")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -4120,7 +4120,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad7eb7")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -4282,7 +4282,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad7ec9")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -4444,7 +4444,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad7ecf")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -4606,7 +4606,7 @@
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/00000000-0000-0000-0000-00005dad7ed5")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.564 0)
@@ -4767,7 +4767,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dadf5df")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -4912,7 +4912,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dae1699")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5057,7 +5057,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dae2532")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5202,7 +5202,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dae2d7b")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5347,7 +5347,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dae3ab5")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5492,7 +5492,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dae4da7")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5637,7 +5637,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf3f20")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5782,7 +5782,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf3f26")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -5927,7 +5927,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf3f2c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6072,7 +6072,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf3f32")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6217,7 +6217,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf3f38")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6362,7 +6362,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf3f3e")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6507,7 +6507,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf8740")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6652,7 +6652,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf8746")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6797,7 +6797,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf874c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -6942,7 +6942,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf8752")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7087,7 +7087,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf8758")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7232,7 +7232,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005daf875e")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7377,7 +7377,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dafc866")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7522,7 +7522,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dafc86c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7667,7 +7667,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dafc872")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7812,7 +7812,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dafc878")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -7957,7 +7957,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dafc87e")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -8102,7 +8102,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005dafc884")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -8247,7 +8247,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/00000000-0000-0000-0000-00005db0078a")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -8393,7 +8393,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dae596b")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -8871,7 +8871,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dae6acd")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -9349,7 +9349,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dae6edd")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -9827,7 +9827,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dae996a")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -10305,7 +10305,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dae9970")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -10783,7 +10783,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dae9976")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -11261,7 +11261,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf3f44")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -11739,7 +11739,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf3f4a")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -12217,7 +12217,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf3f50")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -12695,7 +12695,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf3f56")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -13173,7 +13173,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf3f5c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -13651,7 +13651,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf3f62")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -14129,7 +14129,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf8764")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -14607,7 +14607,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf876a")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -15085,7 +15085,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf8770")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -15563,7 +15563,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf8776")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -16041,7 +16041,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf877c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -16519,7 +16519,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005daf8782")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -16998,7 +16998,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dafc88a")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -17477,7 +17477,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dafc890")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -17956,7 +17956,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dafc896")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -18435,7 +18435,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dafc89c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -18913,7 +18913,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dafc8a2")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -19391,7 +19391,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005dafc8a8")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -19870,7 +19870,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005db007ae")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -20348,7 +20348,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-00005db7d24b")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 2.54 -1.016)
@@ -20825,7 +20825,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005daae5c1")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -21518,7 +21518,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dab46e1")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -22211,7 +22211,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dab4ec8")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -22904,7 +22904,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dab836d")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -23597,7 +23597,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dab8373")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -24290,7 +24290,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dab8379")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -24983,7 +24983,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dabcf73")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -25676,7 +25676,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dabcf79")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -26369,7 +26369,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dabcf7f")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -27062,7 +27062,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dabcf85")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -27755,7 +27755,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dabcf8b")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -28448,7 +28448,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dabcf91")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -29141,7 +29141,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac0c7b")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -29834,7 +29834,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac0c81")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -30527,7 +30527,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac0c87")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -31220,7 +31220,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac0c8d")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -31913,7 +31913,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac0c93")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -32606,7 +32606,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac0c99")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -33299,7 +33299,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac4a60")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -33992,7 +33992,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac4a66")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -34685,7 +34685,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac4a6c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -35378,7 +35378,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac4a72")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -36071,7 +36071,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac4a78")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -36764,7 +36764,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac4a7e")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -37457,7 +37457,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac93d4")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -38161,7 +38161,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac93e6")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -38854,7 +38854,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac93ec")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -39547,7 +39547,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dac93f2")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(fp_line
 			(start -7.1 -7.1)
 			(end -7.1 -6.4)
@@ -40239,7 +40239,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dbf73ff")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 2.85 1.6)
@@ -40402,7 +40402,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc03d38")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -40468,7 +40468,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc0512e")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -40534,7 +40534,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc0f92c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -40600,7 +40600,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc1bc76")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -40666,7 +40666,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc1bc7c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -40733,7 +40733,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/84796ab8-1984-43ce-9f97-a45709e76388")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -41215,7 +41215,7 @@
 		(property ki_fp_filters "Jumper* TestPoint*3Pads* TestPoint*Bridge*")
 		(path "/0b139b95-0e21-48f4-90c8-25731728cd6f")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
@@ -41521,7 +41521,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/da3c473d-f40c-491d-afe1-67ff2e425b18")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.38 -1.38)
@@ -41765,7 +41765,7 @@
 		)
 		(path "/00000000-0000-0000-0000-00005dbfacf7")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 2.9 11.9)
@@ -42214,7 +42214,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/a595e25d-c43a-4eb2-9617-c4ef1a025a46")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -42281,7 +42281,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/56a7cd87-841c-47d6-909e-1a8ef24fad63")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -42759,7 +42759,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/963e603f-f124-4bf8-893d-2514fc8dfc4c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.38 9)
@@ -43004,7 +43004,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/fae113e1-0df8-4939-bb21-b05e35bd60c7")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -43149,7 +43149,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/3f10fac7-9523-4e4c-9627-ea3eaa7bc70f")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -43500,7 +43500,7 @@
 		)
 		(path "/7db4b048-c827-420d-afb6-9127aff15f25")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_rect
 			(start -10.5 -27.4)
@@ -45480,7 +45480,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/91c70ccd-765a-4b69-bc5a-7ec2e618ab76")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -45546,7 +45546,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc14b86")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -45612,7 +45612,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-00005dc1bc70")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(pad "" np_thru_hole circle
 			(at 0 0)
@@ -45679,7 +45679,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/9af723e7-883a-4bf4-ba52-6738e709c9b3")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.794 -0.762)
@@ -46156,7 +46156,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/9eb648a5-504d-4a66-b3fe-71ef1aada19c")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.612 -1)
@@ -46306,7 +46306,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/00000000-0000-0000-0000-00005db74305")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.76 1.56)
@@ -46720,7 +46720,7 @@
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/62b1f1a2-ca54-4907-841c-113152806b45")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files allow_soldermask_bridges)
 		(fp_rect
@@ -47036,7 +47036,7 @@
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/81e8f4a0-dc31-46a0-ab22-6f243bd54b5f")
 		(sheetname "/")
-		(sheetfile "tergo1.kicad_sch")
+		(sheetfile "tergo-mx.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files allow_soldermask_bridges)
 		(fp_rect

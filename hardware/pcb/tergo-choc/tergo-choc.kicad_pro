@@ -955,7 +955,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "tergo-kailh.kicad_pro",
+    "filename": "tergo-choc.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1320,7 +1320,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "tergo-kailh.net",
+      "netlist": "tergo-choc.net",
       "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
@@ -1559,12 +1559,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "tergo-kailh.kicad_sch",
-        "name": "tergo-kailh",
+        "filename": "tergo-choc.kicad_sch",
+        "name": "tergo-choc",
         "uuid": "6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
       }
     ],
-    "used_designators": "R26-28,J4-10,#FLG3-8,D29-171,#PWR7-25,#PWR107-108,#PWR110-117,SW30-172,JP2,U2-4",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

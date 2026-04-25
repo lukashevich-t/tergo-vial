@@ -14141,7 +14141,7 @@
 			(uuid "21df9cf4-ee37-4eee-9e69-edb257038a26")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "#PWR0109")
 					(unit 1)
@@ -14206,7 +14206,7 @@
 			(uuid "9f1054fd-c7d0-45b6-8fa8-08cb2a240093")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "#PWR0108")
 					(unit 1)
@@ -14414,7 +14414,7 @@
 			(uuid "f11d9d84-5f0e-407f-8590-e55fe6e0261c")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "D56")
 					(unit 1)
@@ -14483,7 +14483,7 @@
 			(uuid "588675f8-fbfd-4d08-a1d7-dfcb59c4326a")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "R26")
 					(unit 1)
@@ -14568,7 +14568,7 @@
 			(uuid "060756a7-4e63-4d9e-b57c-63b22c0c98b1")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "JPR2")
 					(unit 1)
@@ -14893,7 +14893,7 @@
 			(uuid "de66e79d-d1c7-494d-b642-1b930b1015c6")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "U1")
 					(unit 1)
@@ -15046,7 +15046,7 @@
 			(uuid "6c5012c2-daa9-431e-ae14-32da91dfd4d2")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "R28")
 					(unit 1)
@@ -15108,7 +15108,7 @@
 			)
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "H9")
 					(unit 1)
@@ -15253,7 +15253,7 @@
 			(uuid "4ac6534e-5700-4f0c-ba5f-36ae761cde7f")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "R27")
 					(unit 1)
@@ -15322,7 +15322,7 @@
 			(uuid "2a8c1355-0644-4425-b4b5-027ed4ec38a8")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "D54")
 					(unit 1)
@@ -15384,7 +15384,7 @@
 			)
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "H8")
 					(unit 1)
@@ -15449,7 +15449,7 @@
 			(uuid "763b9106-cbad-4f1c-8b36-afa3c66a1df4")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "#PWR02")
 					(unit 1)
@@ -15514,7 +15514,7 @@
 			(uuid "1232b3a1-9f00-4be6-aca8-39e331c4ecfd")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "#PWR05")
 					(unit 1)
@@ -15590,7 +15590,7 @@
 			(uuid "db470b70-105c-49cd-a5d9-2f1a510aba74")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "J3")
 					(unit 1)
@@ -15659,7 +15659,7 @@
 			(uuid "a3921c3a-6952-4b24-9bd0-300fc24b5165")
 		)
 		(instances
-			(project "tergo1"
+			(project "tergo-mx"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "D55")
 					(unit 1)

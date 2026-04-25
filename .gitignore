@@ -2,7 +2,7 @@
 # Format documentation: https://kicad.org/help/file-formats/
 
 # Temporary files
-_hardware/temp/
+hardware/temp/
 *.000
 *.bak
 *.bck
