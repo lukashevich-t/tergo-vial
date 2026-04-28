@@ -12,6 +12,8 @@ from keycap_types import SurfaceInfo, KeycapLabelInfo, KeycapModelInfo
 import Draft
 from pathlib import Path
 from BOPTools import BOPFeatures
+from typing import Any
+from keycap_config import gc
 
 
 def create_document() -> FreeCAD.Document:
@@ -22,14 +24,14 @@ def create_document() -> FreeCAD.Document:
     return doc
 
 
-def import_stepfile(doc: FreeCAD.Document, model_path: str, label: str) -> Part.Feature:
+def import_stepfile(model_path: str, label: str) -> Part.Feature:
     "импортирует step-файл в документ FreeCAD. Возвращает импортированный объект"
 
     # получим список уже существуюших объектов в документе:
-    existing_objects = set(doc.Objects)
-    ImportGui.insert(model_path, doc.Name)
+    existing_objects = set(gc.doc.Objects)
+    ImportGui.insert(model_path, gc.doc.Name)
 
-    new_objects = [obj for obj in doc.Objects if obj not in existing_objects]
+    new_objects = [obj for obj in gc.doc.Objects if obj not in existing_objects]
     feature = new_objects[0]
     feature.Label = label
 
@@ -44,8 +46,8 @@ def clone_object(freecad_object, label: str):
     return clone
 
 
-def create_group(doc: FreeCAD.Document, label: str = "Group"):
-    g = doc.addObject("App::DocumentObjectGroup", "Group")
+def create_group(label: str = "Group"):
+    g = gc.doc.addObject("App::DocumentObjectGroup", "Group")
     g.Label = label
     return g
 
@@ -130,7 +132,6 @@ def find_face_normals(surfaces: list[SurfaceInfo]) -> None:
 
 
 def draw_all_normals(
-    doc: FreeCAD.Document,
     average_center: Vector,
     average_normal: Vector,
     surfaces: list[SurfaceInfo],
@@ -145,7 +146,6 @@ def draw_all_normals(
     for surface in surfaces:
         # 3. Визуализируем нормаль конкретной грани (Синим цветом)
         line = draw_normal(
-            doc,
             surface.face_center,
             surface.face_normal,
             f"N_{prefix}_{surface.name}",
@@ -155,7 +155,6 @@ def draw_all_normals(
         result.append(line)
     # Визуализируем общую нормаль (Красным цветом)
     line = draw_normal(
-        doc,
         average_center,
         average_normal,
         f"N_{prefix}_avg",
@@ -167,7 +166,6 @@ def draw_all_normals(
 
 
 def draw_normal(
-    doc: FreeCAD.Document,
     start_point: Vector,
     direction: Vector,
     label: str,
@@ -177,7 +175,7 @@ def draw_normal(
     """Вспомогательная функция для отрисовки линии нормали"""
     end_point = start_point.add(direction.multiply(vector_length))
     line_shape = Part.makeLine(start_point, end_point)
-    line_obj = doc.addObject("Part::Feature", label)
+    line_obj = gc.doc.addObject("Part::Feature", label)
     line_obj.Shape = line_shape
     line_obj.ViewObject.LineColor = color
     line_obj.ViewObject.LineWidth = 2
@@ -185,7 +183,6 @@ def draw_normal(
 
 
 def create_text(
-    doc: FreeCAD.Document,
     text_str: str,
     avg_normal: Vector,
     avg_center: Vector,
@@ -203,7 +200,7 @@ def create_text(
     text_obj.Label = f"ShapeString_{text_str}"
 
     # Вызываем пересчет, чтобы FreeCAD вычислил геометрию и BoundBox
-    doc.recompute()
+    gc.doc.recompute()
 
     # 2. Центрируем текст локально
     # По умолчанию точка вставки текста (0,0,0) — это левый нижний угол.
@@ -231,33 +228,31 @@ def create_text(
     final_placement = FreeCAD.Placement(final_pos, rotation)
     text_obj.Placement = final_placement.multiply(text_obj.Placement)
 
-    doc.recompute()
+    gc.doc.recompute()
     return text_obj
 
 
-def extrude_text(
-    doc: FreeCAD.Document, text_obj, depth: float, vector: Vector
-) -> Part.Feature:
+def extrude_text(text_obj, depth: float, vector: Vector) -> Part.Feature:
     "Делает текст объёмным на указанную глубину"
-    extrusion = doc.addObject("Part::Extrusion", "Text3D")
+    extrusion = gc.doc.addObject("Part::Extrusion", "Text3D")
     extrusion.Base = text_obj
 
     vec: Vector = Vector(vector.x, vector.y, vector.z)
     vec.multiply(-depth / vec.Length)
     extrusion.Dir = vec  # Направление и длина выдавливания
     extrusion.Solid = True
-    doc.recompute()
+    gc.doc.recompute()
     return extrusion
 
 
-def export(doc: FreeCAD.Document, objects: list[Part.Feature], target_dir: str) -> None:
+def export(objects: list[Part.Feature]) -> None:
     "Экспортирует объекты по списку в step-файлы в указанной директории"
-    Path(target_dir).mkdir(exist_ok=True, parents=True)
+    Path(gc.OUT_DIR).mkdir(exist_ok=True, parents=True)
     for object in objects:
         object.Refine = True
-    doc.recompute()
+    gc.doc.recompute()
     for object in objects:
-        full_path: str = f"{target_dir}/{object.Label}.step"
+        full_path: str = f"{gc.OUT_DIR}/{object.Label}.step"
         ImportGui.export([object], full_path)
         # if hasattr(ImportGui, "exportOptions"):
         #     print("exporting with options")
@@ -268,19 +263,31 @@ def export(doc: FreeCAD.Document, objects: list[Part.Feature], target_dir: str) 
         #     ImportGui.export([object], full_path)
 
 
-def engrave_single_keycap(
-    doc: FreeCAD.Document, key: KeycapLabelInfo, FONT_FILE: str, ENGRAVE_DEPTH: float
-) -> Part.Feature:
+def engrave_single_keycap(key: KeycapLabelInfo) -> Part.Feature:
+    def extract_needed_labels() -> list[dict[str, Any]]:
+        result: list[dict[str, Any]] = []
+        result.append(
+            {
+                "label": key.label_main,
+            }
+        )
+        return result
+
     keycap_model: KeycapModelInfo = key.keycap_model
     keycap_template: Part.Feature = keycap_model.template
     label_main: str = key.label_main
 
     # создадим группу
-    group = create_group(doc, f"group_{label_main}")
+    group = create_group(f"group_{label_main}")
 
     # скопируем кейкап
     keycap = clone_object(keycap_template, f"keycap_{label_main}")
     move_objects_to_group([keycap], group)
+
+    engrave_target = keycap
+
+    # create list of requred labels along with their positions:
+    labels: list[dict] = extract_needed_labels()
 
     # создадим facebinder
     selection = [(keycap_template, tuple([x.name for x in keycap_model.surfaces]))]
@@ -290,17 +297,17 @@ def engrave_single_keycap(
 
     # создать текст:
     text = create_text(
-        doc, label_main, keycap_model.normal, keycap_model.center, FONT_FILE, 3
+        label_main, keycap_model.normal, keycap_model.center, gc.FONT_FILE, 3
     )
     move_objects_to_group([text], group)
 
-    extruded_text: Part.Feature = extrude_text(doc, text, 30, keycap_model.normal)
+    extruded_text: Part.Feature = extrude_text(text, 30, keycap_model.normal)
     extruded_text.Label = f"Text3D_{label_main}"
     move_objects_to_group([extruded_text], group)
 
     # пересечение facebinder с выдавленной надписью:
 
-    bp = BOPFeatures.BOPFeatures(doc)
+    bp = BOPFeatures.BOPFeatures(gc.doc)
     projected_text: Part.Feature = bp.make_multi_common(
         [
             fb.Name,
@@ -310,18 +317,18 @@ def engrave_single_keycap(
     move_objects_to_group([projected_text], group)
 
     # Выдавливаем полученный текст на изогнутой поверхностью:
-    extruded_text2 = doc.addObject("Part::Extrusion", f"Text3DCurved_{label_main}")
+    extruded_text2 = gc.doc.addObject("Part::Extrusion", f"Text3DCurved_{label_main}")
     extruded_text2.Base = projected_text
     extruded_text2.Dir = FreeCAD.Vector(
-        0, 0, -ENGRAVE_DEPTH
+        0, 0, -gc.ENGRAVE_DEPTH
     )  # Направление и длина выдавливания
     extruded_text2.Solid = True
     move_objects_to_group([extruded_text2], group)
 
     # Вычитаем полученный объёмный текст из оригинального кейкапа (Part: Cut):
-    bp = BOPFeatures.BOPFeatures(doc)
+    bp = BOPFeatures.BOPFeatures(gc.doc)
     final_keycap = bp.make_cut([keycap.Name, extruded_text2.Name])
     final_keycap.Label = f"final_keycap_{label_main}"
     # kc.move_objects_to_group([final_keycap], group)
-    doc.recompute()
+    gc.doc.recompute()
     return final_keycap

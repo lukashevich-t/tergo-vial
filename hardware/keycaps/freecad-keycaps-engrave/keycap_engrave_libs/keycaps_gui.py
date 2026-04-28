@@ -4,6 +4,23 @@ import FreeCAD
 from keycap_types import SurfaceInfo, KeycapModelInfo
 
 
+def set_wait_cursor() -> None:
+    QtWidgets.QApplication.setOverrideCursor(QtCore.Qt.WaitCursor)
+
+
+def set_default_cursor() -> None:
+    QtWidgets.QApplication.restoreOverrideCursor()
+
+
+def set_status_message(msg: str) -> None:
+    """sets or clears statusbar message. If msg is Falsy - message will be cleared"""
+    if msg:
+        Gui.getMainWindow().statusBar().showMessage(msg)
+    else:
+        Gui.getMainWindow().statusBar().clearMessage()
+    QtWidgets.QApplication.processEvents()
+
+
 # Define the Dialog Class
 class SimpleDialog(QtGui.QDialog):
     def __init__(self):
@@ -115,13 +132,16 @@ class SequentialSelectionTask:
         show_object(current_item.template, True)
         Gui.runCommand("Std_ViewGroup", 2)
         Gui.SendMsgToActiveView("ViewFit")
+
+        set_status_message(f"select top faces for {current_item.name}")
         self.label.setText(
             f"Шаг {self.current_index + 1} из {len(self.items)}\n"
-            f"Выберите поверхности для:\n{current_item.path}"
+            f"Выберите поверхности для:\n{current_item.name}"
         )
 
     def accept(self):
         """Вызывается при нажатии кнопки OK (Далее)"""
+        set_status_message("")
         # Сохраняем текущий выбор
         sel = Gui.Selection.getSelectionEx()
         current_item = self.items[self.current_index]

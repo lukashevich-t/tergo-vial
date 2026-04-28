@@ -1,7 +1,6 @@
 from FreeCAD import Vector
 import Part
 
-
 class SurfaceInfo:
     """Storage of face information"""
 
@@ -127,3 +126,4 @@ class KeycapLabelInfo:
         self.label_tr = label_tr
         self.label_bl = label_bl
         self.label_br = label_br
+
