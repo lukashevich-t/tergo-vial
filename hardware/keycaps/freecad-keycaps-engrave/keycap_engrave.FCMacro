@@ -1,0 +1,92 @@
+import FreeCAD
+import FreeCADGui as Gui
+import Part
+import Draft
+import os
+import sys
+from BOPTools import BOPFeatures
+from FreeCAD import Vector
+from keycap_engrave_libs.keycap_types import (
+    KeycapModelInfo,
+    SurfaceInfo,
+    KeycapLabelInfo,
+)
+
+KEYCAP_DIR = "/mnt/media/temp/KLP-Lame-Keycaps/STEP/Choc Stem + Choc Size"
+OUT_DIR = "/home/tim/temp/engraved-keycaps"  # target path for engraved keycaps (generated .step files)
+FONT_FILE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"
+ENGRAVE_DEPTH: float = 0.2
+keycap_normal = KeycapModelInfo(KEYCAP_DIR + "/Choc_Stem_Choc_Size_Normal.step")
+keycap_thumb = KeycapModelInfo(
+    KEYCAP_DIR + "/Choc_Stem_Choc_Size_Thumb.step", center_correction=Vector(0, 1.37, 0)
+)
+# Fill info on all keycaps to generate:
+KEYS = [
+    KeycapLabelInfo(keycap_normal, "Esc", label_tl="~"),
+    # KeycapLabelInfo(keycap_normal, "1", label_tl="!", label_br="F1"),
+    # KeycapLabelInfo(keycap_normal, "2", label_tl="@", label_br="F2"),
+    # KeycapLabelInfo(keycap_thumb, "Alt"),
+    # KeycapLabelInfo(keycap_thumb, "Ctrl"),
+]
+UNIQUE_KEYCAP_MODELS: set[KeycapModelInfo] = set([x.keycap_model for x in KEYS])
+
+absPath = os.path.abspath(os.path.dirname(__file__))
+__keycap2_package_path__ = absPath + os.path.sep + "keycap_engrave_libs" + os.path.sep
+if __keycap2_package_path__ not in sys.path:
+    sys.path.insert(0, __keycap2_package_path__)
+
+for module in ("keycaps", "keycaps_gui", "keycap_types", "QtCompat"):
+    if module in sys.modules:
+        del sys.modules[module]
+
+import keycaps as kc
+import keycaps_gui as kcgui
+
+
+# import all keycap models from .step files into brand new FreeCAD document:
+doc: FreeCAD.Document = kc.create_document()
+group_template = kc.create_group(doc, "group_template")
+for keycapInfo in UNIQUE_KEYCAP_MODELS:
+    keycap = kc.import_stepfile(doc, keycapInfo.path, keycapInfo.name)
+    keycapInfo.template = keycap
+    kc.move_objects_to_group([keycap], group_template)
+
+
+def process_selected_faces(keycaps: list[KeycapModelInfo]):
+    "Continues process after user selected top faces of unique keycaps"
+    for keycap in keycaps:
+        faces: list[SurfaceInfo] = keycap.surfaces
+        kc.find_face_normals(faces)
+        keycap.normal = kc.find_average_normal([face.face_normal for face in faces])
+        keycap.center = kc.find_average_center([face.face_center for face in faces])
+        # do the manual correction for center of keycap:
+        keycap.center = keycap.center.add(keycap.center_correction)
+        normal_lines: list[Part.Feature] = kc.draw_all_normals(
+            doc, keycap.center, keycap.normal, faces, keycap.name
+        )
+        kc.move_objects_to_group(normal_lines, group_template)
+
+    generated_final_keycaps: list[Part.Feature] = []
+    final_keycap: Part.Feature = None  # pyright: ignore[reportAssignmentType]
+    for key in KEYS:
+        final_keycap = kc.engrave_single_keycap(
+            doc,
+            key,
+            FONT_FILE,
+            ENGRAVE_DEPTH,
+        )
+        generated_final_keycaps.append(final_keycap)
+
+    kcgui.hide_all(doc)
+    final_group = kc.create_group(doc, "final_keycaps")
+    kc.move_objects_to_group(generated_final_keycaps, final_group)
+    kcgui.show_object(final_keycap)
+    kc.export(doc, generated_final_keycaps, OUT_DIR)
+
+
+# bring GUI tool to user to select top faces of all unique loaded keycaps:
+kcgui.hide_all(doc)
+panel = kcgui.SequentialSelectionTask(
+    list(UNIQUE_KEYCAP_MODELS), process_selected_faces
+)
+Gui.Control.showDialog(panel)

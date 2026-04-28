@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.FCMacro": "python"
+  },
+    "python.analysis.extraPaths": [
+      "./keycap_engrave_libs",
+      "/mnt/freecad/usr/bin",
+      "/mnt/freecad/usr/lib"
+    ],
+    "python.analysis.stubPath": "/mnt/media/work/freecad/freecad-stubs/freecad_stubs",
+    "python.analysis.typeCheckingMode": "standard",
+}
