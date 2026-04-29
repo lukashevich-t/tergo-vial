@@ -1,6 +1,7 @@
 from FreeCAD import Vector
 import Part
 
+
 class SurfaceInfo:
     """Storage of face information"""
 
@@ -52,6 +53,11 @@ class KeycapModelInfo:
 
     center_correction = Vector(0, 0, 0)
     """manual correction for automatically detected center of mass"""
+
+    @property
+    def effective_center(self) -> Vector:
+        """effective center of keycap's surface (center + center_correction)"""
+        return self.center.add(self.center_correction)
 
     template: Part.Feature
     """FreeCad's Part.Feature object. Filled after loading the model from .step file"""
@@ -127,3 +133,13 @@ class KeycapLabelInfo:
         self.label_bl = label_bl
         self.label_br = label_br
 
+
+class Label:
+    font_size: float = 3
+    center: Vector = Vector()
+    text: str = ""
+
+    def __init__(self, text: str, font_size: float, center: Vector):
+        self.text = text
+        self.font_size = font_size
+        self.center = center

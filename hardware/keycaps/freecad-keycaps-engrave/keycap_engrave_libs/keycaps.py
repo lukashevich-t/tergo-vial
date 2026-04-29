@@ -8,7 +8,7 @@ import FreeCAD
 from datetime import datetime
 import Part, FreeCADGui
 from FreeCAD import Vector
-from keycap_types import SurfaceInfo, KeycapLabelInfo, KeycapModelInfo
+from keycap_types import SurfaceInfo, KeycapLabelInfo, KeycapModelInfo, Label
 import Draft
 from pathlib import Path
 from BOPTools import BOPFeatures
@@ -221,7 +221,9 @@ def create_text(
     # Мы хотим, чтобы текст находился в avg_center, но был приподнят над поверхностью
     # (например, на 0.1 мм), чтобы избежать ошибок наложения поверхностей при булевых операциях.
     offset_height = 2
-    final_pos = avg_center.add(avg_normal.multiply(offset_height))
+    final_pos = avg_center.add(
+        Vector(avg_normal.x, avg_normal.y, avg_normal.z).multiply(offset_height)
+    )
 
     # Создаем итоговый Placement: (Позиция, Поворот, Центр вращения)
     # Важно: мы умножаем новый Placement на старый, чтобы сохранить локальное центрирование
@@ -251,8 +253,10 @@ def export(objects: list[Part.Feature]) -> None:
     for object in objects:
         object.Refine = True
     gc.doc.recompute()
+    counter = 1
     for object in objects:
-        full_path: str = f"{gc.OUT_DIR}/{object.Label}.step"
+        full_path: str = f"{gc.OUT_DIR}/{counter:03}.step"
+        counter += 1
         ImportGui.export([object], full_path)
         # if hasattr(ImportGui, "exportOptions"):
         #     print("exporting with options")
@@ -264,13 +268,52 @@ def export(objects: list[Part.Feature]) -> None:
 
 
 def engrave_single_keycap(key: KeycapLabelInfo) -> Part.Feature:
-    def extract_needed_labels() -> list[dict[str, Any]]:
-        result: list[dict[str, Any]] = []
+    def extract_needed_labels() -> list[Label]:
+        result: list[Label] = []
         result.append(
-            {
-                "label": key.label_main,
-            }
+            Label(key.label_main, gc.MAIN_LABEL_SIZE, key.keycap_model.effective_center)
         )
+        if key.label_tl:
+            result.append(
+                Label(
+                    key.label_tl,
+                    gc.OTHER_LABEL_SIZE,
+                    key.keycap_model.effective_center.add(
+                        Vector(-gc.LABEL_HRZ_OFFSET, gc.LABEL_VERT_OFFSET, 0)
+                    ),
+                )
+            )
+        if key.label_tr:
+            result.append(
+                Label(
+                    key.label_tr,
+                    gc.OTHER_LABEL_SIZE,
+                    key.keycap_model.effective_center.add(
+                        Vector(gc.LABEL_HRZ_OFFSET, gc.LABEL_VERT_OFFSET, 0)
+                    ),
+                )
+            )
+        if key.label_bl:
+            result.append(
+                Label(
+                    key.label_bl,
+                    gc.OTHER_LABEL_SIZE,
+                    key.keycap_model.effective_center.add(
+                        Vector(-gc.LABEL_HRZ_OFFSET, -gc.LABEL_VERT_OFFSET, 0)
+                    ),
+                )
+            )
+        if key.label_br:
+            result.append(
+                Label(
+                    key.label_br,
+                    gc.OTHER_LABEL_SIZE,
+                    key.keycap_model.effective_center.add(
+                        Vector(gc.LABEL_HRZ_OFFSET, -gc.LABEL_VERT_OFFSET, 0)
+                    ),
+                )
+            )
+
         return result
 
     keycap_model: KeycapModelInfo = key.keycap_model
@@ -284,51 +327,57 @@ def engrave_single_keycap(key: KeycapLabelInfo) -> Part.Feature:
     keycap = clone_object(keycap_template, f"keycap_{label_main}")
     move_objects_to_group([keycap], group)
 
-    engrave_target = keycap
+    final_keycap = keycap
 
     # create list of requred labels along with their positions:
-    labels: list[dict] = extract_needed_labels()
+    labels: list[Label] = extract_needed_labels()
 
-    # создадим facebinder
-    selection = [(keycap_template, tuple([x.name for x in keycap_model.surfaces]))]
-    fb: Part.Feature = Draft.make_facebinder(selection, f"fb_{label_main}")
-    # Draft.autogroup(fb)
-    move_objects_to_group([fb], group)
+    for label in labels:
+        # create facebinder
+        selection = [(keycap_template, tuple([x.name for x in keycap_model.surfaces]))]
+        fb: Part.Feature = Draft.make_facebinder(selection, f"fb_{label_main}")
+        # Draft.autogroup(fb)
+        move_objects_to_group([fb], group)
+        # создать текст:
+        text = create_text(
+            label.text,
+            keycap_model.normal,
+            label.center,
+            gc.FONT_FILE,
+            label.font_size,
+        )
+        move_objects_to_group([text], group)
 
-    # создать текст:
-    text = create_text(
-        label_main, keycap_model.normal, keycap_model.center, gc.FONT_FILE, 3
-    )
-    move_objects_to_group([text], group)
+        extruded_text: Part.Feature = extrude_text(text, 30, keycap_model.normal)
+        extruded_text.Label = f"Text3D_{label_main}"
+        move_objects_to_group([extruded_text], group)
 
-    extruded_text: Part.Feature = extrude_text(text, 30, keycap_model.normal)
-    extruded_text.Label = f"Text3D_{label_main}"
-    move_objects_to_group([extruded_text], group)
+        # пересечение facebinder с выдавленной надписью:
 
-    # пересечение facebinder с выдавленной надписью:
+        bp = BOPFeatures.BOPFeatures(gc.doc)
+        projected_text: Part.Feature = bp.make_multi_common(
+            [
+                fb.Name,
+                extruded_text.Name,
+            ]
+        )
+        move_objects_to_group([projected_text], group)
 
-    bp = BOPFeatures.BOPFeatures(gc.doc)
-    projected_text: Part.Feature = bp.make_multi_common(
-        [
-            fb.Name,
-            extruded_text.Name,
-        ]
-    )
-    move_objects_to_group([projected_text], group)
+        # Выдавливаем полученный текст на изогнутой поверхностью:
+        extruded_text2 = gc.doc.addObject(
+            "Part::Extrusion", f"Text3DCurved_{label_main}"
+        )
+        extruded_text2.Base = projected_text
+        extruded_text2.Dir = FreeCAD.Vector(
+            0, 0, -gc.ENGRAVE_DEPTH
+        )  # Направление и длина выдавливания
+        extruded_text2.Solid = True
+        move_objects_to_group([extruded_text2], group)
 
-    # Выдавливаем полученный текст на изогнутой поверхностью:
-    extruded_text2 = gc.doc.addObject("Part::Extrusion", f"Text3DCurved_{label_main}")
-    extruded_text2.Base = projected_text
-    extruded_text2.Dir = FreeCAD.Vector(
-        0, 0, -gc.ENGRAVE_DEPTH
-    )  # Направление и длина выдавливания
-    extruded_text2.Solid = True
-    move_objects_to_group([extruded_text2], group)
+        # Вычитаем полученный объёмный текст из оригинального кейкапа (Part: Cut):
+        bp = BOPFeatures.BOPFeatures(gc.doc)
+        final_keycap = bp.make_cut([final_keycap.Name, extruded_text2.Name])
 
-    # Вычитаем полученный объёмный текст из оригинального кейкапа (Part: Cut):
-    bp = BOPFeatures.BOPFeatures(gc.doc)
-    final_keycap = bp.make_cut([keycap.Name, extruded_text2.Name])
     final_keycap.Label = f"final_keycap_{label_main}"
-    # kc.move_objects_to_group([final_keycap], group)
     gc.doc.recompute()
     return final_keycap
