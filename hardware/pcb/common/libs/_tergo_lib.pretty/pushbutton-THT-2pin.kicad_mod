@@ -7,7 +7,7 @@
 		(at 1 -1.5 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "3682b359-2c08-49e8-b107-fa46594d3f3e")
+		(uuid "b26906d2-71dc-418e-b33b-979a00662adc")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "171616e8-cc6b-4735-8b53-1a6ebd436ba3")
+		(uuid "0ebb34cd-59a5-4017-9a4b-c3e9032fcca8")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4409af90-b717-4561-b4f7-b91c2d0abacb")
+		(uuid "6c8970e4-7172-4dc2-806a-31ad4d9bf5c9")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "56ac5560-09b1-47b0-ba75-adfec34325a1")
+		(uuid "1dd77763-98dd-4e8d-b685-d5ab8c3e909a")
 		(effects
 			(font
 				(size 1 1)
@@ -64,13 +64,13 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "55c147aa-2831-4350-9a1b-277cb283890e")
+		(uuid "ec2caf2c-8171-44ce-81ef-6b1a6ca9827e")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "a31d7693-12de-4eef-9a67-0a6988509cc5")
+		(uuid "a1dc6ab5-e9d2-4286-8aa3-938339b3c110")
 		(effects
 			(font
 				(size 1 1)
@@ -84,15 +84,15 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "ec55366f-12a3-40a2-9e72-44e10eadc6ee")
+		(uuid "cef6ce82-3759-417e-b5ad-1782322726ab")
 	)
-	(pad "1" thru_hole circle
+	(pad "2" thru_hole circle
 		(at 2.5 0)
 		(size 2 2)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "08292a99-2575-4dba-9d1f-a0d544df0283")
+		(uuid "ebbc4bdb-09c0-4c94-99ac-e467c02e5c14")
 	)
 	(embedded_fonts no)
 	(model "D:/temp/2/Push_Button_6.2x6.2_2pins v1.stl"

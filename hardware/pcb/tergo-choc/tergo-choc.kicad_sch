@@ -1466,6 +1466,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -1620,6 +1719,207 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_Push_Dual_x2"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push_Dual_x2"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, separate symbols, four pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_Dual_x2_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_Dual_x2_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SW_Push_Dual_x2_2_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2805,12 +3105,6 @@
 		(uuid "0e2345db-33f1-48bb-a7dd-5c539e27f3b9")
 	)
 	(junction
-		(at 182.88 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e8668de-c795-44dc-8b09-25dfff499089")
-	)
-	(junction
 		(at 210.82 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3075,12 +3369,6 @@
 		(uuid "806fa615-7210-4e23-ba91-a1a41b618619")
 	)
 	(junction
-		(at 180.34 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80f95bbb-6fde-432a-b736-6dc9785bd4a2")
-	)
-	(junction
 		(at 93.98 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3279,12 +3567,6 @@
 		(uuid "cda1e1ef-82dc-49b3-88ba-05a3dd15ae09")
 	)
 	(junction
-		(at 181.61 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0b7a128-3e38-4f0b-b408-415835d8016e")
-	)
-	(junction
 		(at 205.74 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3369,12 +3651,6 @@
 		(uuid "fa02a5bd-03fe-47bf-98ca-9c45f1c6cbf2")
 	)
 	(junction
-		(at 237.49 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fdd89b5d-a3d6-46cb-89bc-10e03e23ef7f")
-	)
-	(junction
 		(at 124.46 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3391,6 +3667,10 @@
 	(no_connect
 		(at 226.06 53.34)
 		(uuid "2a129497-fad2-4043-83e3-c50d9f7bdc86")
+	)
+	(no_connect
+		(at 203.2 38.1)
+		(uuid "366a11bc-f1f6-468e-885e-0970a0bee004")
 	)
 	(no_connect
 		(at 226.06 43.18)
@@ -3419,6 +3699,10 @@
 	(no_connect
 		(at 40.64 53.34)
 		(uuid "427ec19b-656e-4bb5-ae7f-d14a394be383")
+	)
+	(no_connect
+		(at 203.2 50.8)
+		(uuid "52bceb97-fe5b-4e74-b13d-38aa567708c1")
 	)
 	(no_connect
 		(at 63.5 43.18)
@@ -3465,6 +3749,14 @@
 		(uuid "989d4b13-362f-414f-b1db-a3f7ec5bbbbd")
 	)
 	(no_connect
+		(at 203.2 63.5)
+		(uuid "9935ccfc-52b9-439e-a3a1-53bf8c194cc6")
+	)
+	(no_connect
+		(at 203.2 25.4)
+		(uuid "b8338c26-1531-4c38-bde2-4e06aae7ed41")
+	)
+	(no_connect
 		(at 63.5 40.64)
 		(uuid "c2e97f52-9401-447a-8085-245bde88acd3")
 	)
@@ -3497,16 +3789,6 @@
 			(type default)
 		)
 		(uuid "0090ae32-3ae4-454b-936d-c68c2803279b")
-	)
-	(wire
-		(pts
-			(xy 181.61 50.8) (xy 181.61 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "032eb4d8-4a16-4d80-9e28-9656ed02bfdb")
 	)
 	(wire
 		(pts
@@ -3780,16 +4062,6 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 63.5) (xy 237.49 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20c0430b-681f-44ae-ab10-79328e8d5481")
-	)
-	(wire
-		(pts
 			(xy 266.7 127) (xy 266.7 116.84)
 		)
 		(stroke
@@ -3940,16 +4212,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 63.5) (xy 180.34 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38e7f212-0f81-467d-9ae1-fc700e57462e")
-	)
-	(wire
-		(pts
 			(xy 256.54 121.92) (xy 271.78 121.92)
 		)
 		(stroke
@@ -4080,16 +4342,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 25.4) (xy 203.2 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "486918dd-e769-4b94-a9d9-50453566420e")
-	)
-	(wire
-		(pts
 			(xy 99.06 119.38) (xy 114.3 119.38)
 		)
 		(stroke
@@ -4147,26 +4399,6 @@
 			(type default)
 		)
 		(uuid "4dd4b11f-a631-4417-bbc6-918486c37291")
-	)
-	(wire
-		(pts
-			(xy 182.88 38.1) (xy 182.88 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f0e0161-edbe-4d08-addf-c2353e0af7df")
-	)
-	(wire
-		(pts
-			(xy 237.49 63.5) (xy 237.49 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f3ee6fc-db25-4718-8304-5664ea3fad9a")
 	)
 	(wire
 		(pts
@@ -4360,16 +4592,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 25.4) (xy 181.61 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67108635-be8c-483a-a9e4-a1fabf194b2e")
-	)
-	(wire
-		(pts
 			(xy 191.77 132.08) (xy 195.58 132.08)
 		)
 		(stroke
@@ -4397,16 +4619,6 @@
 			(type default)
 		)
 		(uuid "69d142ef-a354-47c2-af3d-030557000308")
-	)
-	(wire
-		(pts
-			(xy 176.53 25.4) (xy 180.34 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bbc5b25-2683-4838-bbd7-86c6da52db91")
 	)
 	(wire
 		(pts
@@ -4550,16 +4762,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 25.4) (xy 182.88 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b0a63d7-f830-463c-8ea7-0995d4d5e065")
-	)
-	(wire
-		(pts
 			(xy 236.22 127) (xy 236.22 137.16)
 		)
 		(stroke
@@ -4587,16 +4789,6 @@
 			(type default)
 		)
 		(uuid "7e1a3ec4-c539-491c-b274-8d973ad6ed8f")
-	)
-	(wire
-		(pts
-			(xy 180.34 63.5) (xy 180.34 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7efd1a2d-1e8a-408e-a57d-b668b23dd6aa")
 	)
 	(wire
 		(pts
@@ -4707,16 +4899,6 @@
 			(type default)
 		)
 		(uuid "8cc201de-9f04-486e-9f21-e9c3c6c8c6b3")
-	)
-	(wire
-		(pts
-			(xy 203.2 50.8) (xy 181.61 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d35be6d-3382-43e4-889e-21cb57950998")
 	)
 	(wire
 		(pts
@@ -4990,7 +5172,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 25.4) (xy 237.49 25.4)
+			(xy 236.22 25.4) (xy 241.3 25.4)
 		)
 		(stroke
 			(width 0)
@@ -5450,16 +5632,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 25.4) (xy 241.3 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d986bea6-1eaa-48a0-9a33-8f087c26d31a")
-	)
-	(wire
-		(pts
 			(xy 21.59 25.4) (xy 22.86 25.4)
 		)
 		(stroke
@@ -5830,16 +6002,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 38.1) (xy 182.88 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcc44128-87b5-48ca-a749-63e033fef075")
-	)
-	(wire
-		(pts
 			(xy 251.46 137.16) (xy 251.46 127)
 		)
 		(stroke
@@ -5857,6 +6019,16 @@
 			(type default)
 		)
 		(uuid "ff6035f1-a310-4c9e-9e0e-fa666022b796")
+	)
+	(label "RST_L"
+		(at 34.29 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "00d45058-fec3-4fbd-9d08-4c7953884e02")
 	)
 	(label "RST_R"
 		(at 190.5 78.74 180)
@@ -6307,16 +6479,6 @@
 			(justify right bottom)
 		)
 		(uuid "9afe24f9-956b-42fd-96a3-108bb13d419e")
-	)
-	(label "RST_L"
-		(at 20.32 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9cb471e0-b4fd-45bb-94dd-a4c9ba234d8a")
 	)
 	(label "ROWC_L"
 		(at 39.37 58.42 180)
@@ -7140,6 +7302,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 179.07 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "048145ba-0981-447c-b5fa-c21897e320a9")
+		(property "Reference" "H6"
+			(at 181.61 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 181.61 101.5999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 179.07 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 179.07 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
 		(at 99.06 60.96 0)
 		(unit 1)
@@ -7307,18 +7546,30 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 176.53 25.4 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 186.69 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "093353b2-6fa1-4911-8a0f-09a0a6f5f2bb")
-		(property "Reference" "#PWR010"
-			(at 176.53 31.75 0)
+		(fields_autoplaced yes)
+		(uuid "0988985c-3368-4281-be48-8c46111d1c82")
+		(property "Reference" "H8"
+			(at 189.23 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 189.23 101.5999 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7326,20 +7577,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 176.657 29.7942 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 25.4 0)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 186.69 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7350,7 +7592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 25.4 0)
+			(at 186.69 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7360,8 +7602,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 25.4 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 186.69 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7370,14 +7612,11 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "25df0ad9-5325-43db-aadf-a4834cfef4dd")
 		)
 		(instances
 			(project "tergo-choc"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
-					(reference "#PWR010")
+					(reference "H8")
 					(unit 1)
 				)
 			)
@@ -10674,6 +10913,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 226.06 63.5 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46fa852d-2c23-455f-adfc-150b232998f7")
+		(property "Reference" "#PWR018"
+			(at 232.41 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.854 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "09eeb939-3805-4aaa-ab65-f71728bd8b12")
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 260.35 24.13 180)
 		(unit 1)
 		(body_style 1)
@@ -11064,83 +11380,6 @@
 			(project "tergo-choc"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "D16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 30.48 78.74 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5133421c-5960-4a10-b050-7892e44890c0")
-		(property "Reference" "#PWR02"
-			(at 36.83 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 33.274 78.74 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 30.48 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c7dad715-31a1-49ca-b0a3-b683d4b125ad")
-		)
-		(instances
-			(project "tergo-choc"
-				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -12040,6 +12279,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push_Dual_x2")
+		(at 39.37 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68798884-2c0c-45a9-a3ba-578ad1ae0027")
+		(property "Reference" "SW1"
+			(at 39.37 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RST_LEFT"
+			(at 39.37 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_tergo_lib:pushbutton-THT-2pin"
+			(at 39.37 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, separate symbols, four pins"
+			(at 39.37 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "ccd833bc-05ad-4bbb-9d46-aa410b234fa1")
+		)
+		(pin "3"
+			(uuid "4bacce72-f52a-4182-bfc0-312b32fecccc")
+		)
+		(pin "1"
+			(uuid "2bf7ff82-f313-40ac-a639-711cba8d2e91")
+		)
+		(pin "2"
+			(uuid "84cb9b1a-6f36-480d-aa2f-e9d93f70a7da")
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Small")
 		(at 210.82 129.54 90)
 		(unit 1)
@@ -12194,6 +12518,160 @@
 			(project "tergo-choc"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "SW44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 30.48 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6de19c8f-f958-4437-9637-aa97898a25f8")
+		(property "Reference" "H2"
+			(at 33.02 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 33.02 96.5199 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 30.48 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 30.48 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 186.69 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e3695ea-c2f8-4baf-a07f-1fa7f5bbaf07")
+		(property "Reference" "H7"
+			(at 189.23 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 189.23 96.5199 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -13226,6 +13704,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 179.07 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a0611b0-cb39-40f1-be5f-b13d13ad1894")
+		(property "Reference" "H5"
+			(at 181.61 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 181.61 96.5199 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 179.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 179.07 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 119.38 134.62 0)
 		(unit 1)
@@ -13465,7 +14020,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
+		(lib_id "Switch:SW_Push_Dual_x2")
 		(at 195.58 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -13485,7 +14040,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "RST_RIGHT"
 			(at 195.58 73.8124 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13495,7 +14050,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "_tergo_lib:pushbutton-THT-2pin"
 			(at 195.58 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -13517,8 +14072,9 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, separate symbols, four pins"
 			(at 195.58 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13532,6 +14088,12 @@
 		)
 		(pin "2"
 			(uuid "ed9c45a3-02bb-4b8c-b7b7-fbae8828e757")
+		)
+		(pin "3"
+			(uuid "5811c7ac-5c1b-4d74-8c47-8046ab5eb77d")
+		)
+		(pin "4"
+			(uuid "ed434d4e-a211-455e-90fa-8d5344a1b09f")
 		)
 		(instances
 			(project "tergo-choc"
@@ -14342,6 +14904,83 @@
 			(project "tergo-choc"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "SW25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 44.45 81.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e381bd5-d552-4f39-8e4c-1f1cb636129b")
+		(property "Reference" "#PWR03"
+			(at 50.8 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 47.244 81.28 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dcce074b-218c-49ec-8b29-e15d0eea3400")
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -17757,84 +18396,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 25.4 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0605024-0665-40b9-aa37-3b29d0e0dbd6")
-		(property "Reference" "SW1"
-			(at 25.4 71.501 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 25.4 73.8124 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ff1d38f-78f0-42c0-9bf5-ec8bb12743c2")
-		)
-		(pin "2"
-			(uuid "8e0c31b1-9d88-49af-93b9-bcc93e97a12c")
-		)
-		(instances
-			(project "tergo-choc"
-				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x01_Socket")
 		(at 25.4 27.94 180)
 		(unit 1)
@@ -17908,6 +18469,83 @@
 			(project "tergo-choc"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 30.48 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d37cdc05-95fd-4a4c-8b8d-59506d8bb2c3")
+		(property "Reference" "H4"
+			(at 33.02 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 33.02 101.5999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 30.48 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 30.48 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -18441,6 +19079,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 22.86 100.33 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dbc9d136-f8c1-497a-a2fd-7a068a72d331")
+		(property "Reference" "H3"
+			(at 25.4 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 25.4 101.5999 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 22.86 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 22.86 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 215.9 137.16 0)
 		(unit 1)
@@ -18673,6 +19388,83 @@
 			(project "tergo-choc"
 				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
 					(reference "D60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 22.86 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0336dc2-b77b-4b82-9d8a-b1052813a524")
+		(property "Reference" "H1"
+			(at 25.4 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 25.4 96.5199 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_tergo_lib:MountHole_5mm"
+			(at 22.86 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 22.86 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "tergo-choc"
+				(path "/6ee29673-ecc0-4b7c-9347-a55f93ecf45c"
+					(reference "H1")
 					(unit 1)
 				)
 			)
