@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://raw.githubusercontent.com/qmk/qmk_firmware/refs/heads/master/data/schemas/": true
+  }
+}

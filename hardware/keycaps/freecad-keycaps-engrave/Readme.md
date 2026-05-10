@@ -50,3 +50,6 @@ echo "/opt/AppImages/FreeCAD_1.1.1-Linux-x86_64-py311.AppImage /mnt/freecad   sq
 	"python.analysis.typeCheckingMode": "standard",
 }
 ```
+
+# Проблемы
+Иногда случаются проблемы при нанесении гравировки. Помогает открыть проблемный кейкап в FreeCAD и поднять выдавленный 3Д-текст на 1 мкм по оси Z.

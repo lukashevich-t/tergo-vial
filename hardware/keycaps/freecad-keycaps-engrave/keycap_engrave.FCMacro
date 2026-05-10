@@ -28,7 +28,7 @@ from keycap_config import gc
 
 gc.FONT_FILE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"
 gc.KEYCAP_DIR = "/mnt/media/temp/KLP-Lame-Keycaps/STEP/Choc Stem + Choc Size"
-gc.OUT_DIR = "/home/tim/temp/engraved-keycaps"  # target path for engraved keycaps (generated .step files)
+gc.OUT_DIR = "/home/tim/work/3dprint/engraved-keycaps"  # target path for engraved keycaps (generated .step files)
 gc.ENGRAVE_DEPTH = 0.2
 keycap_normal = KeycapModelInfo(gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Normal.step")
 keycap_thumb = KeycapModelInfo(
