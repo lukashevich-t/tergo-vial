@@ -19,10 +19,10 @@
  */
 
 // disable debug print:
-#undef NO_DEBUG
-#define NO_DEBUG
-// force enable debug output:
 // #undef NO_DEBUG
+// #define NO_DEBUG
+// force enable debug output:
+#undef NO_DEBUG
 
 // disable print:
 //#define NO_PRINT

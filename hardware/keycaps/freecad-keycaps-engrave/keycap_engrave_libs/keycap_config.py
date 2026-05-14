@@ -10,8 +10,8 @@ class KeycapSettings:
     OUT_DIR: str = None  # type: ignore
     ENGRAVE_DEPTH: float = 0.2
     KEYS: list[KeycapLabelInfo] = []
-    MAIN_LABEL_SIZE: float = 3
-    OTHER_LABEL_SIZE: float = 2
+    MAIN_LABEL_SIZE: float = 4.5
+    OTHER_LABEL_SIZE: float = 3
     doc: FreeCAD.Document = None  # type: ignore
     LABEL_HRZ_OFFSET: float = 3
     """Horizontal offset (to the left and to the right) from the center of main label to the centers of secondary labels"""

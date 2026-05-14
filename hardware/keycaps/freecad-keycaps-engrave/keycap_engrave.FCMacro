@@ -68,7 +68,7 @@ gc.KEYS = [
     KeycapLabelInfo(keycap_normal, "A", label_br="Ф", label_tr="d"),
     KeycapLabelInfo(keycap_normal, "S", label_br="Ы", label_tr="⬅"),
     KeycapLabelInfo(keycap_normal, "D", label_br="В", label_tr="⬆"),
-    KeycapLabelInfo(keycap_normal, "F", label_br="А", label_tr="⮕"),
+    KeycapLabelInfo(keycap_normal, "F", label_br="А"), # , label_tr="⮕"
     KeycapLabelInfo(keycap_normal, "G", label_br="П"),
     KeycapLabelInfo(keycap_normal, "H", label_br="Р"),
     KeycapLabelInfo(keycap_normal, "J", label_br="О"),
@@ -96,10 +96,10 @@ gc.KEYS = [
     # row 5
     KeycapLabelInfo(keycap_normal, "Win", label_tr="F11"),
     KeycapLabelInfo(keycap_thumb, "FN"),
-    KeycapLabelInfo(keycap_thumb, "␣"),
+    KeycapLabelInfo(keycap_thumb, "SPC"),
     KeycapLabelInfo(keycap_thumb, "Alt"),
     KeycapLabelInfo(keycap_thumb, "⏎", label_tr="Alt"),
-    KeycapLabelInfo(keycap_thumb, "⌫", label_tr="Del"),
+    KeycapLabelInfo(keycap_thumb, "⬅"), # , label_tr="Del"
     KeycapLabelInfo(keycap_thumb, "FN"),
     KeycapLabelInfo(
         keycap_normal, "]", label_tl="}", label_tr="F12", label_br="Ъ", label_bl="≡"
