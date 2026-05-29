@@ -30,80 +30,85 @@ gc.FONT_FILE = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"
 gc.KEYCAP_DIR = "/mnt/media/temp/KLP-Lame-Keycaps/STEP/Choc Stem + Choc Size"
 gc.OUT_DIR = "/home/tim/work/3dprint/engraved-keycaps"  # target path for engraved keycaps (generated .step files)
 gc.ENGRAVE_DEPTH = 0.2
-keycap_normal = KeycapModelInfo(gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Normal.step")
-keycap_thumb = KeycapModelInfo(
-    gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Thumb.step",
-    center_correction=Vector(0, 1.37, 0),
+# keycap_normal = KeycapModelInfo(gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Normal.step")
+keycap_normal_homing = KeycapModelInfo(gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Normal_Homing.step")
+keycap_normal_tilted = KeycapModelInfo(gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Normal_Tilted.step")
+# keycap_thumb = KeycapModelInfo(
+#     gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Thumb.step",
+#     center_correction=Vector(0, 1.37, 0),
+# )
+keycap_thumb_homing = KeycapModelInfo(
+    gc.KEYCAP_DIR + "/Choc_Stem_Choc_Size_Saddle_Homing.step"
 )
 # Fill info on all keycaps to generate:
 gc.KEYS = [
     # row 1
-    KeycapLabelInfo(keycap_normal, "Esc", label_tl="~"),
-    KeycapLabelInfo(keycap_normal, "1", label_tl="!", label_br="F1"),
-    KeycapLabelInfo(keycap_normal, "2", label_tl="@", label_tr='"', label_br="F2"),
-    KeycapLabelInfo(keycap_normal, "3", label_tl="#", label_tr="№", label_br="F3"),
-    KeycapLabelInfo(keycap_normal, "4", label_tl="$", label_tr=";", label_br="F4"),
-    KeycapLabelInfo(keycap_normal, "5", label_tl="%", label_br="F5"),
-    KeycapLabelInfo(keycap_normal, "6", label_tl="^", label_tr=":", label_br="F6"),
-    KeycapLabelInfo(keycap_normal, "7", label_tl="&", label_tr="?", label_br="F7"),
-    KeycapLabelInfo(keycap_normal, "8", label_tl="*", label_br="F8"),
-    KeycapLabelInfo(keycap_normal, "9", label_tl="(", label_br="F9"),
-    KeycapLabelInfo(keycap_normal, "0", label_tl=")", label_br="F10"),
-    KeycapLabelInfo(keycap_normal, "-", label_tl="_", label_br="+"),
+    KeycapLabelInfo(keycap_normal_tilted, "Esc", label_tl="~"),
+    # KeycapLabelInfo(keycap_normal_tilted, "1", label_tl="!", label_br="F1"),
+    # KeycapLabelInfo(keycap_normal_tilted, "2", label_tl="@", label_tr='"', label_br="F2"),
+    # KeycapLabelInfo(keycap_normal_tilted, "3", label_tl="#", label_tr="№", label_br="F3"),
+    # KeycapLabelInfo(keycap_normal_tilted, "4", label_tl="$", label_tr=";", label_br="F4"),
+    # KeycapLabelInfo(keycap_normal_tilted, "5", label_tl="%", label_br="F5"),
+    # KeycapLabelInfo(keycap_normal_tilted, "6", label_tl="^", label_tr=":", label_br="F6"),
+    # KeycapLabelInfo(keycap_normal_tilted, "7", label_tl="&", label_tr="?", label_br="F7"),
+    # KeycapLabelInfo(keycap_normal_tilted, "8", label_tl="*", label_br="F8"),
+    # KeycapLabelInfo(keycap_normal_tilted, "9", label_tl="(", label_br="F9"),
+    # KeycapLabelInfo(keycap_normal_tilted, "0", label_tl=")", label_br="F10"),
+    # KeycapLabelInfo(keycap_normal_tilted, "-", label_tl="_", label_br="+"),
     # row 2
-    KeycapLabelInfo(keycap_normal, "Tab"),
-    KeycapLabelInfo(keycap_normal, "Q", label_br="Й"),
-    KeycapLabelInfo(keycap_normal, "W", label_br="Ц", label_tr="h"),
-    KeycapLabelInfo(keycap_normal, "E", label_br="У", label_tr="⬆"),  # ⬅ ⬇ ⮕
-    KeycapLabelInfo(keycap_normal, "R", label_br="К", label_tr="pu"),
-    KeycapLabelInfo(keycap_normal, "T", label_br="Е", label_tr="L3"),
-    KeycapLabelInfo(keycap_normal, "Y", label_br="Н", label_tr="L3"),
-    KeycapLabelInfo(keycap_normal, "U", label_br="Г", label_tr="pu"),
-    KeycapLabelInfo(keycap_normal, "I", label_br="Ш", label_tr="⬆"),
-    KeycapLabelInfo(keycap_normal, "O", label_br="Щ", label_tr="h"),  # home key ⇱
-    KeycapLabelInfo(keycap_normal, "P", label_br="З", label_tr="ins"),
-    KeycapLabelInfo(keycap_normal, "[", label_br="Х", label_tl="{", label_tr="d"),
+    # KeycapLabelInfo(keycap_normal, "Tab"),
+    # KeycapLabelInfo(keycap_normal, "Q", label_br="Й"),
+    # KeycapLabelInfo(keycap_normal, "W", label_br="Ц", label_tr="h"),
+    # KeycapLabelInfo(keycap_normal, "E", label_br="У", label_tr="⬆"),  # ⬅ ⬇ ⮕
+    # KeycapLabelInfo(keycap_normal, "R", label_br="К", label_tr="pu"),
+    # KeycapLabelInfo(keycap_normal, "T", label_br="Е", label_tr="L3"),
+    # KeycapLabelInfo(keycap_normal, "Y", label_br="Н", label_tr="L3"),
+    # KeycapLabelInfo(keycap_normal, "U", label_br="Г", label_tr="pu"),
+    # KeycapLabelInfo(keycap_normal, "I", label_br="Ш", label_tr="⬆"),
+    # KeycapLabelInfo(keycap_normal, "O", label_br="Щ", label_tr="h"),  # home key ⇱
+    # KeycapLabelInfo(keycap_normal, "P", label_br="З", label_tr="ins"),
+    # KeycapLabelInfo(keycap_normal, "[", label_br="Х", label_tl="{", label_tr="d"),
     # row 3
-    KeycapLabelInfo(keycap_normal, "⇧"),  # shift
-    KeycapLabelInfo(keycap_normal, "A", label_br="Ф", label_tr="d"),
-    KeycapLabelInfo(keycap_normal, "S", label_br="Ы", label_tr="⬅"),
-    KeycapLabelInfo(keycap_normal, "D", label_br="В", label_tr="⬆"),
-    KeycapLabelInfo(keycap_normal, "F", label_br="А"), # , label_tr="⮕"
-    KeycapLabelInfo(keycap_normal, "G", label_br="П"),
-    KeycapLabelInfo(keycap_normal, "H", label_br="Р"),
-    KeycapLabelInfo(keycap_normal, "J", label_br="О"),
-    KeycapLabelInfo(keycap_normal, "K", label_br="Л"),
-    KeycapLabelInfo(keycap_normal, "L", label_br="Д"),
-    KeycapLabelInfo(keycap_normal, ";", label_br="Ж", label_tl=";", label_tr="ps"),
-    KeycapLabelInfo(keycap_normal, "'", label_br="Э", label_tl='"', label_tr="⇧"),
+    # KeycapLabelInfo(keycap_normal, "⇧"),  # shift
+    # KeycapLabelInfo(keycap_normal, "A", label_br="Ф", label_tr="d"),
+    # KeycapLabelInfo(keycap_normal, "S", label_br="Ы", label_tr="⬅"),
+    # KeycapLabelInfo(keycap_normal, "D", label_br="В", label_tr="⬆"),
+    KeycapLabelInfo(keycap_normal_homing, "F", label_br="А"), # , label_tr="⮕"
+    # KeycapLabelInfo(keycap_normal, "G", label_br="П"),
+    # KeycapLabelInfo(keycap_normal, "H", label_br="Р"),
+    # KeycapLabelInfo(keycap_normal_homing, "J", label_br="О"),
+    # KeycapLabelInfo(keycap_normal, "K", label_br="Л"),
+    # KeycapLabelInfo(keycap_normal, "L", label_br="Д"),
+    # KeycapLabelInfo(keycap_normal, ";", label_br="Ж", label_tl=";", label_tr="ps"),
+    # KeycapLabelInfo(keycap_normal, "'", label_br="Э", label_tl='"', label_tr="⇧"),
     # row 4
-    KeycapLabelInfo(keycap_normal, "Ctrl"),
-    KeycapLabelInfo(keycap_normal, "Z", label_br="Я"),
-    KeycapLabelInfo(keycap_normal, "X", label_br="Ч", label_tr="e"),  # end key ⇲
-    KeycapLabelInfo(keycap_normal, "C", label_br="С", label_tr="⬇"),
-    KeycapLabelInfo(keycap_normal, "V", label_br="М", label_tr="pd"),
-    KeycapLabelInfo(keycap_normal, "B", label_br="И"),
-    KeycapLabelInfo(keycap_normal, "N", label_br="Т"),
-    KeycapLabelInfo(keycap_normal, "M", label_br="Ь", label_tr="pd"),
-    KeycapLabelInfo(keycap_normal, ",", label_br="Б", label_tl="<", label_tr="⬇"),
-    KeycapLabelInfo(
-        keycap_normal, ".", label_br="Ю", label_tl=">", label_tr="e"
-    ),  # end key ⇲
-    KeycapLabelInfo(
-        keycap_normal, "/", label_br=".", label_tl="?", label_tr="p"
-    ),  # pause
-    KeycapLabelInfo(keycap_normal, "Ctrl", label_tr="\\"),
+    # KeycapLabelInfo(keycap_normal, "Ctrl"),
+    # KeycapLabelInfo(keycap_normal, "Z", label_br="Я"),
+    # KeycapLabelInfo(keycap_normal, "X", label_br="Ч", label_tr="e"),  # end key ⇲
+    # KeycapLabelInfo(keycap_normal, "C", label_br="С", label_tr="⬇"),
+    # KeycapLabelInfo(keycap_normal, "V", label_br="М", label_tr="pd"),
+    # KeycapLabelInfo(keycap_normal, "B", label_br="И"),
+    # KeycapLabelInfo(keycap_normal, "N", label_br="Т"),
+    # KeycapLabelInfo(keycap_normal, "M", label_br="Ь", label_tr="pd"),
+    # KeycapLabelInfo(keycap_normal, ",", label_br="Б", label_tl="<", label_tr="⬇"),
+    # KeycapLabelInfo(
+    #     keycap_normal, ".", label_br="Ю", label_tl=">", label_tr="e"
+    # ),  # end key ⇲
+    # KeycapLabelInfo(
+    #     keycap_normal, "/", label_br=".", label_tl="?", label_tr="p"
+    # ),  # pause
+    # KeycapLabelInfo(keycap_normal, "Ctrl", label_tr="\\"),
     # row 5
-    KeycapLabelInfo(keycap_normal, "Win", label_tr="F11"),
-    KeycapLabelInfo(keycap_thumb, "FN"),
-    KeycapLabelInfo(keycap_thumb, "SPC"),
-    KeycapLabelInfo(keycap_thumb, "Alt"),
-    KeycapLabelInfo(keycap_thumb, "⏎", label_tr="Alt"),
-    KeycapLabelInfo(keycap_thumb, "⬅"), # , label_tr="Del"
-    KeycapLabelInfo(keycap_thumb, "FN"),
-    KeycapLabelInfo(
-        keycap_normal, "]", label_tl="}", label_tr="F12", label_br="Ъ", label_bl="≡"
-    ),
+    # KeycapLabelInfo(keycap_normal, "Win", label_tr="F11"),
+    # KeycapLabelInfo(keycap_thumb, "FN"),
+    # KeycapLabelInfo(keycap_thumb_homing, "SPC"),
+    # KeycapLabelInfo(keycap_thumb, "Alt"),
+    # KeycapLabelInfo(keycap_thumb, "⏎", label_tr="Alt"),
+    KeycapLabelInfo(keycap_thumb_homing, "⬅"), # , label_tr="Del"
+    # KeycapLabelInfo(keycap_thumb, "FN"),
+    # KeycapLabelInfo(
+    #     keycap_normal, "]", label_tl="}", label_tr="F12", label_br="Ъ", label_bl="≡"
+    # ),
 ]
 UNIQUE_KEYCAP_MODELS: set[KeycapModelInfo] = set([x.keycap_model for x in gc.KEYS])
 
