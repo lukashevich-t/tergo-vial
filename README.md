@@ -94,3 +94,4 @@ rm -rf converted-image && mkdir -p converted-image && qmk painter-convert-graphi
 
 - содержимое папки `logo/converted-image/logo.qgf.*` переписать в `split/display/` с заменой файлов.
 - Пересобрать прошивку.
+
