@@ -57,15 +57,15 @@
       ],
       [
         { "y": -0.75, "x": 3 },
-        "1,2\n\nW\n\nHome\n\n\n\n\n\nЦ",
+        "1,2\n\nW\n\nPgUp\n\n\n\n\n\nЦ",
         { "x": 8.5 },
-        "6,2\n\nO\n\nHome\n\n\n\n\n\nЩ"
+        "6,2\n\nO\n\nPgUp\n\n\n\n\n\nЩ"
       ],
       [
         { "y": -0.85, "x": 5 },
-        "1,4\n\nR\n\nPgUp\n\n\n\n\n\nК",
+        "1,4\n\nR\n\nHome\n\n\n\n\n\nК",
         { "x": 4.5 },
-        "6,4\n\nU\n\nPgUp\n\n\n\n\n\nГ"
+        "6,4\n\nU\n\nHome\n\n\n\n\n\nГ"
       ],
       [
         { "y": -0.88, "x": 6 },
@@ -131,15 +131,15 @@
       ],
       [
         { "y": -0.75, "x": 3 },
-        "3,2\n\nX\n\nEnd\n\n\n\n\n\nЧ",
+        "3,2\n\nX\n\nPgDn\n\n\n\n\n\nЧ",
         { "x": 8.5 },
-        "8,2\n.\n>\n\nEnd\n\n\n\n\n\nЮ"
+        "8,2\n.\n>\n\nPgDn\n\n\n\n\n\nЮ"
       ],
       [
         { "y": -0.85, "x": 5 },
-        "3,4\n\nV\n\nPgDn\n\n\n\n\n\nМ",
+        "3,4\n\nV\n\nEnd\n\n\n\n\n\nМ",
         { "x": 4.5 },
-        "8,4\n\nM\n\nPgDn\n\n\n\n\n\nЬ"
+        "8,4\n\nM\n\nEnd\n\n\n\n\n\nЬ"
       ],
       [
         { "y": -0.88, "x": 6 },

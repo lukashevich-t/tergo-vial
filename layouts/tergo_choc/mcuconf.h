@@ -13,5 +13,5 @@
 #define RP_I2C_USE_I2C1 FALSE
 
 // Для того, чтобы скомпилировалась поддержка обычной подсветки с использованием аппаратного PWM:
-#undef RP_PWM_USE_PWM7
-#define RP_PWM_USE_PWM7 TRUE
+#undef RP_PWM_USE_PWM1
+#define RP_PWM_USE_PWM1 TRUE

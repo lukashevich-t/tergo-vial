@@ -72,11 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //+--------+--------+--------+--------+--------+--------+                 +--------+--------+--------+--------+--------+--------+
         KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                     KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,
     //+--------+--------+--------+--------+--------+--------+                 +--------+--------+--------+--------+--------+--------+
-        KC_TAB,  _______, KC_HOME, KC_UP  , KC_PGUP, TO_CTRL,                   TO_CTRL, KC_PGUP, KC_UP,   KC_HOME, KC_INS,  KC_DEL,
+        KC_TAB,  _______, KC_PGUP, KC_UP  , KC_HOME, TO_CTRL,                   TO_CTRL, KC_HOME, KC_UP,   KC_PGUP, KC_INS,  KC_DEL,
     //+--------+--------+--------+--------+--------+--------+                 +--------+--------+--------+--------+--------+--------+
         TD_CPS1, _______, KC_LEFT, KC_UP,   KC_RGHT, _______,                   _______, KC_LEFT, KC_UP,   KC_RGHT, KC_PSCR, KC_SLSF,
     //+--------+--------+--------+--------+--------+--------+                 +--------+--------+--------+--------+--------+--------+
-        KC_LCTL, _______, KC_END,  KC_DOWN, KC_PGDN, _______,                   _______, KC_PGDN, KC_DOWN, KC_END,  KC_PAUS, _______,
+        KC_LCTL, _______, KC_PGDN, KC_DOWN, KC_END,  _______,                   _______, KC_END, KC_DOWN,  KC_PGDN, KC_PAUS, _______,
     //+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
         KC_F11,                             _______, KC_SPC,  KC_LALT, KC_ETAL, KC_DEL,  _______,                            KC_F12
     //+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
@@ -169,12 +169,10 @@ void raw_hid_receive_kb(uint8_t *data, uint8_t length) {
         os_layout[0] = data[2];
         os_layout[1] = data[3];
         // display_on(true);
-        if((os_layout[0] == 'E' && os_layout[1] == 'N') || (os_layout[0] == 'U' && os_layout[1] == 'S')) {
-            // Для английского языка выключим подсветку
-            my_backlight_disable();
-        } else {
-            // Для остальных языков - включим
+        if(data[4]) {
             my_backlight_enable();
+        } else {
+            my_backlight_disable();
         }
     }
 }

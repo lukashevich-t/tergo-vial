@@ -53,14 +53,14 @@
 
 // /** ПОДСВЕТКА */
 // Для того, чтобы скомпилировалась поддержка обычной подсветки с использованием аппаратного PWM:
-#define BACKLIGHT_PWM_DRIVER PWMD7
+#define BACKLIGHT_PWM_DRIVER PWMD1
 // pwm channel зависит от того, какой вывод используется для PWM
-#define BACKLIGHT_PWM_CHANNEL RP2040_PWM_CHANNEL_B
+#define BACKLIGHT_PWM_CHANNEL RP2040_PWM_CHANNEL_A
 // это мне посоветовал gemimi, но вроде бы нигде в кодовой базе нет такой константы:
 #define SPLIT_BACKLIGHT_ENABLE
 
 // // Указываем пин, к которому подключен затвор транзистора
-#define BACKLIGHT_PIN GP15
+#define BACKLIGHT_PIN GP18
 
 // // Количество уровней яркости (не считая состояния "выключено")
 #define BACKLIGHT_LEVELS 7
@@ -85,3 +85,13 @@
 #define SHOW_LOGO_DURATION 4000
 #undef QUANTUM_PAINTER_DISPLAY_TIMEOUT
 #define QUANTUM_PAINTER_DISPLAY_TIMEOUT 10000
+
+// // led pins. Их нужно здесь прописать, даже если впоследствии мы будем управлять ими вручную.
+// // Видимо эти пины где-то под капотом инициализируются как выходы.
+// #undef LED_NUM_LOCK_PIN
+// #define LED_NUM_LOCK_PIN GP20
+
+// #undef LED_CAPS_LOCK_PIN
+// #define LED_CAPS_LOCK_PIN GP19
+
+// #define SPLIT_LED_STATE_ENABLE

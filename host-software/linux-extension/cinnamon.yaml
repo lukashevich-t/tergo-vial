@@ -7,9 +7,9 @@
   become: false # По умолчанию работаем от обычного пользователя
 
   vars:
-    ext_uuid: "cinnamon-to-tergo2@tlukashevich.com" # UID расширения
+    ext_uuid: "tergo-layout@tlukashevich.com" # UID расширения
     ext_dir: "{{ ansible_env.HOME }}/.local/share/cinnamon/extensions/{{ ext_uuid }}"
-    src_files_dir: "./"
+    src_files_dir: "./cinnamon/"
     
     # Укажите VID и PID вашей клавиатуры для udev. В 16-ричной системе счисления, но без префикса 0x
     usb_vid: "5954"
@@ -72,7 +72,7 @@
 
         - name: Copy compiled C binary (send_hid)
           copy:
-            src: "{{ src_files_dir }}/send_hid"
+            src: send_hid
             dest: "{{ ext_dir }}/send_hid"
             mode: '0755' # Делаем файл исполняемым
 

@@ -1,0 +1,80 @@
+
+// gnome-extensions disable {{ ext_uuid }}
+// gnome-extensions reset {{ ext_uuid }}
+// gnome-extensions enable {{ ext_uuid }}
+// gsettings get org.gnome.shell enabled-extensions
+// gnome-extensions list
+
+import Gio from "gi://Gio";
+import GLib from "gi://GLib";
+import St from "gi://St";
+
+import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
+import * as Main from "resource:///org/gnome/shell/ui/main.js";
+import * as PanelMenu from "resource:///org/gnome/shell/ui/panelMenu.js";
+import * as Keyboard from "resource:///org/gnome/shell/ui/status/keyboard.js";
+
+// "Адрес" клавиатуры
+let USB_VID = "{{ usb_vid }}"; // hex, но без префикса 0x
+let USB_PID = "{{ usb_pid }}"; // hex, но без префикса 0x
+let HID_RAW_USAGE_PAGE = "{{ hid_raw_usage_page }}"; // hex, но без префикса 0x
+
+const MANAGER_SIGNAL_NAME = "current-source-changed";
+
+export default class InputSourceMonitorExtension extends Extension {
+    constructor(metadata) {
+        super(metadata);
+        this.meta = metadata;
+        this._manager = Keyboard.getInputSourceManager();
+        this._signalId = null;
+    }
+
+    enable() {
+        // subscribe to input source changes
+        this._signalId = this._manager.connect(
+            MANAGER_SIGNAL_NAME,
+            () => {
+                const source = this._manager.currentSource;
+                this._onLayoutChanged(source.id);
+            },
+        );
+    }
+
+    _log(message) {
+        console.log(`tergo: ${message}`)
+    }
+
+    _onLayoutChanged(inputId) {
+        try {
+            // Получаем путь к папке нашего расширения
+            let extensionDir = this.meta.path;
+            
+            // Формируем полный путь к скрипту
+            let scriptPath = GLib.build_filenamev([extensionDir, 'send_hid']);
+            
+            let backlightOn = 1;
+            let layoutName = inputId.toUpperCase().substring(0, 2);
+            if (layoutName == 'US' || layoutName == 'EN') {
+                backlightOn = 0
+            };
+            let command = `"${scriptPath}" ${USB_VID} ${USB_PID} ${HID_RAW_USAGE_PAGE} ${layoutName} ${backlightOn}`;
+
+            // Запускаем асинхронно
+            let success = GLib.spawn_command_line_async(command);
+            
+            if (success) {
+              this._log(`Успешно запущен процесс: ${command}`);
+            }
+
+        } catch (e) {
+            this._log(`Ошибка при получении раскладки: ${e.message}`);
+        }
+    }
+    
+    disable() {
+        if (this._signalId) {
+            this._manager.disconnect(this._signalId);
+            this._signalId = null;
+        }
+    }
+}
